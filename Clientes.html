@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fruteira VL - Clientes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>👤 FRUTEIRA VL</h1>
+
+        <nav class="menu-paginas">
+    <a href="Frutas.html">🍎 Frutas</a>
+    <a href="Produtos.html">📦 Produtos</a>
+    <a href="Clientes.html">👤 Clientes</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="cadastro">
+
+            <h2>Cadastrar Novo Cliente</h2>
+
+            <form id="form-cliente">
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text"
+                           id="nome"
+                           required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email"
+                           id="email"
+                           required>
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text"
+                           id="telefone"
+                           required>
+                </div>
+
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text"
+                           id="cep"
+                           required>
+                </div>
+
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text"
+                           id="endereco"
+                           required>
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text"
+                           id="cidade"
+                           required>
+                </div>
+
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text"
+                           id="estado"
+                           required>
+                </div>
+
+                <div>
+                    <label for="datanascimento">
+                        Data de nascimento:
+                    </label>
+
+                    <input type="text"
+                           id="datanascimento"
+                           placeholder="Ex: 15/05/2000"
+                           required>
+                </div>
+
+                <div>
+                    <label for="genero">Gênero:</label>
+                    <input type="text"
+                           id="genero"
+                           required>
+                </div>
+
+                <button type="submit">
+                    Cadastrar Cliente
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <h2>Clientes Cadastrados</h2>
+
+            <div id="lista-clientes"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>2026 - Fruteira VL</p>
+
+    </footer>
+
+
+    <script src="clientes.js"></script>
+
+</body>
+
+</html>

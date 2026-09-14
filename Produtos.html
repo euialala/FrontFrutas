@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fruteira VL - Produtos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>📦 FRUTEIRA VL</h1>
+
+        <nav class="menu-paginas">
+    <a href="Frutas.html">🍎 Frutas</a>
+    <a href="Produtos.html">📦 Produtos</a>
+    <a href="Clientes.html">👤 Clientes</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="cadastro">
+
+            <h2>Cadastrar Novo Produto</h2>
+
+            <form id="form-produto">
+
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="preco">Preço (R$):</label>
+                    <input type="number"
+                           id="preco"
+                           step="0.01"
+                           required>
+                </div>
+
+                <div>
+                    <label for="estoque">Estoque:</label>
+                    <input type="number"
+                           id="estoque"
+                           required>
+                </div>
+
+                <div>
+                    <label for="validade">Validade:</label>
+                    <input type="text"
+                           id="validade"
+                           placeholder="Ex: 10/12/2026"
+                           required>
+                </div>
+
+                <div>
+                    <label for="fabricacao">Fabricação:</label>
+                    <input type="text"
+                           id="fabricacao"
+                           placeholder="Ex: 10/09/2026"
+                           required>
+                </div>
+
+                <div>
+                    <label for="categoria">Categoria:</label>
+                    <input type="text"
+                           id="categoria"
+                           required>
+                </div>
+
+                <div>
+                    <label for="marca">Marca:</label>
+                    <input type="text"
+                           id="marca"
+                           required>
+                </div>
+
+                <div>
+                    <label for="unidade">Unidade:</label>
+                    <input type="text"
+                           id="unidade"
+                           placeholder="Ex: kg, unidade, caixa"
+                           required>
+                </div>
+
+                <div>
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao"
+                              required></textarea>
+                </div>
+
+                <button type="submit">
+                    Cadastrar Produto
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <h2>Produtos Cadastrados</h2>
+
+            <div id="lista-produtos"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>2026 - Fruteira VL</p>
+
+    </footer>
+
+
+    <script src="produtos.js"></script>
+
+</body>
+
+</html>

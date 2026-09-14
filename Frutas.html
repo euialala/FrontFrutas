@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fruteira VL - Frutas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍎 FRUTEIRA VL</h1>
+
+        <nav class="menu-paginas">
+    <a href="Frutas.html">🍎 Frutas</a>
+    <a href="Produtos.html">📦 Produtos</a>
+    <a href="Clientes.html">👤 Clientes</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="cadastro">
+
+            <h2>Cadastrar Nova Fruta</h2>
+
+            <form id="form-fruta">
+
+                <div>
+                    <label for="nome">Nome da Fruta:</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" required>
+                </div>
+
+                <div>
+                    <label for="preco">Preço (R$):</label>
+                    <input type="number" id="preco" step="0.01" required>
+                </div>
+
+                <div>
+                    <label for="distribuidora">Distribuidora:</label>
+                    <input type="text" id="distribuidora" required>
+                </div>
+
+                <div>
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso" step="0.01" required>
+                </div>
+
+                <div>
+                    <label for="origem">Origem:</label>
+                    <input type="text" id="origem" required>
+                </div>
+
+                <div>
+                    <label for="qualidade">Qualidade:</label>
+                    <input type="text" id="qualidade" required>
+                </div>
+
+                <div>
+                    <label for="safra">Safra:</label>
+                    <input type="number" id="safra" required>
+                </div>
+
+                <div>
+                    <label for="especie">Espécie:</label>
+                    <input type="text" id="especie" required>
+                </div>
+
+                <button type="submit">
+                    Cadastrar Fruta
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section id="lista-frutas">
+
+            <h2>Frutas Cadastradas</h2>
+
+            <div id="lista"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>2026 - Fruteira VL</p>
+    </footer>
+
+    <script src="Frutas.js"></script>
+
+</body>
+
+</html>
