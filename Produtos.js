@@ -250,6 +250,16 @@ async function deletarProduto(id) {
     }
 
 }
+const descricao = document.getElementById("descricao");
+const contadorDescricao =
+    document.getElementById("contador-descricao");
+
+descricao.addEventListener("input", () => {
+
+    contadorDescricao.textContent =
+        `${descricao.value.length}/200 caracteres`;
+
+});
 
 
 // Iniciar

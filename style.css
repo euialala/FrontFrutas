@@ -272,3 +272,23 @@ button:not([type="submit"]):hover {
 .fruta-card p {
     margin: 4px 0;
 }
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #43a047;
+}
+#contador-descricao {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 13px;
+}

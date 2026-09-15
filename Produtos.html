@@ -72,14 +72,17 @@
                            placeholder="Ex: 10/09/2026"
                            required>
                 </div>
-
-                <div>
                     <label for="categoria">Categoria:</label>
-                    <input type="text"
-                           id="categoria"
-                           required>
-                </div>
-
+                    <select id="categoria" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="Frutas">Frutas</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Laticínios">Laticínios</option>
+                        <option value="Cereais">Cereais</option>
+                        <option value="Doces">Doces</option>
+                        <option value="Congelados">Congelados</option>
+                        <option value="Outros">Outros</option>
+                    </select>
                 <div>
                     <label for="marca">Marca:</label>
                     <input type="text"
@@ -95,10 +98,17 @@
                            required>
                 </div>
 
-                <div>
+                 <div>
                     <label for="descricao">Descrição:</label>
-                    <textarea id="descricao"
-                              required></textarea>
+
+                    <textarea
+                        id="descricao"
+                        maxlength="200"
+                        required></textarea>
+
+                    <small id="contador-descricao">
+                        0/200 caracteres
+                    </small>
                 </div>
 
                 <button type="submit">
